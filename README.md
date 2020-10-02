@@ -1,5 +1,5 @@
 
-![logo](images/icon.jpg) 
+![logo](https://raw.githubusercontent.com/mahfuznow/colorify/master/images/icon.jpg) 
 
 ## Colorify
 
@@ -37,7 +37,7 @@ print(colorify("Info  ", C.blue))
 print(colorify("Info  ", C.white, C.blue))
 ```
 ### Output
-![output1](images/output1.JPG) ____________ ![output](images/output2.JPG)
+![output1](https://raw.githubusercontent.com/mahfuznow/colorify/master/images/output1.JPG) ____________ ![output](https://raw.githubusercontent.com/mahfuznow/colorify/master/images/output2.JPG)
 
 
 > 
@@ -52,11 +52,11 @@ print(colorify("Your text", C.color_name , C.color_name))
 ```
 
 ### Basic colors:
-![color_palette](images/color-basic.JPG)
+![color_palette](https://raw.githubusercontent.com/mahfuznow/colorify/master/images/color-basic.JPG)
 
 
 ### More colors:
-![color_palette](images/color-1.JPG)![color_palette](images/color-2.JPG)![color_palette](images/color-3.JPG)![color_palette](images/color-4.JPG)![color_palette](images/color-5.JPG)![color_palette](images/color-6.JPG)![color_palette](images/color-7.JPG)![color_palette](images/color-8.JPG)![color_palette](images/color-9.JPG)![color_palette](images/color-10.JPG)![color_palette](images/color-11.JPG)
+![color_palette](https://raw.githubusercontent.com/mahfuznow/colorify/master/images/color-1.JPG)![color_palette](https://raw.githubusercontent.com/mahfuznow/colorify/master/images/color-2.JPG)![color_palette](https://raw.githubusercontent.com/mahfuznow/colorify/master/images/color-3.JPG)![color_palette](https://raw.githubusercontent.com/mahfuznow/colorify/master/images/color-4.JPG)![color_palette](https://raw.githubusercontent.com/mahfuznow/colorify/master/images/color-5.JPG)![color_palette](https://raw.githubusercontent.com/mahfuznow/colorify/master/images/color-6.JPG)![color_palette](https://raw.githubusercontent.com/mahfuznow/colorify/master/images/color-7.JPG)![color_palette](https://raw.githubusercontent.com/mahfuznow/colorify/master/images/color-8.JPG)![color_palette](https://raw.githubusercontent.com/mahfuznow/colorify/master/images/color-9.JPG)![color_palette](https://raw.githubusercontent.com/mahfuznow/colorify/master/images/color-10.JPG)![color_palette](https://raw.githubusercontent.com/mahfuznow/colorify/master/images/color-11.JPG)
 
 ### Need more colors?
 ```python

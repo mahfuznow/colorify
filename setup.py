@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="colorify",
-    version="1.0.0",
+    version="1.0.2",
     author="Md. Mahfuzur Rahman",
     author_email="contact@mahfuznow.com",
     description="Bring life into your project by adding wonderful colors",
