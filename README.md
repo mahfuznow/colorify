@@ -1,5 +1,5 @@
 
-![logo](images/icon.JPG) 
+![logo](images/icon.jpg) 
 
 ## Colorify
 
