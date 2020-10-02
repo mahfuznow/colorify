@@ -1,9 +1,9 @@
-###Build Distribution
+### Build Distribution
 ```python
 python setup.py sdist bdist_wheel
 ```
 
-###Upload
+### Upload
 ```python
 twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
 
@@ -12,7 +12,7 @@ twine upload dist/*
 #then give username and password
 #DONE
 ```
-###Update
+### Update
 ```python
 #first increment the version number in setup.py
 #delete dist directory
