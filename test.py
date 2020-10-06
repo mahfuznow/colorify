@@ -3,6 +3,11 @@ from colorify import *
 # initializing COLORIFY
 init_colorify()
 
+#this will generate text in random color
+for i in range(10):
+    print(colorify("Random Colored text"))
+
+
 # text color = green
 print(colorify("Sucess", C.green))
 # text color = black , background color = green

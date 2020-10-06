@@ -1,8 +1,9 @@
 import sys
 import os
+import random
 
 
-class C:
+class C():
     # BASIC
 
     blue = (52, 152, 219)
@@ -162,6 +163,22 @@ class C:
     gainsboro = (220, 220, 220)
     white_smoke = (245, 245, 245)
 
+class CR:
+    blue = (52, 152, 219)
+    green = (46, 204, 113)
+    red = (231, 76, 60)
+    orange = (230, 126, 34)
+    yellow = (241, 196, 15)
+    purple = (155, 89, 182)
+    cyan = (17, 183, 229)
+
+    crimson	= (220,20,60)
+    dark_orange	= (255,140,0)
+    gold = (255,215,0)
+    yellow_green = (154,205,50)
+    blue_violet	= (138,43,226)
+    deep_pink =	(255,20,147)
+    chocolate =	(210,105,30)
 
 def init_colorify():
     if sys.platform.startswith("win32"):
@@ -169,8 +186,15 @@ def init_colorify():
     elif sys.platform.startswith("darwin") or sys.platform.startswith("linux"):
         os.system("clear")
 
+def getRandomColorName():
+    #color_dict = CR.__dict__
+    color_list = [color for color in dir(CR) if not color.startswith('__')]
+    return random.choice(color_list)
 
-def colorify(text, text_color, background_color=None):
+
+def colorify(text, text_color=None, background_color=None):
+    if text_color == None:
+        text_color = getattr(C, getRandomColorName())
     if background_color == None:
         return "\033[38;2;{};{};{}m{}\033[0m".format(
             str(text_color[0]), str(text_color[1]), str(text_color[2]), text

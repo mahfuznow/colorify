@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="colorify",
-    version="1.0.2",
+    version="1.0.3",
     author="Md. Mahfuzur Rahman",
     author_email="contact@mahfuznow.com",
     description="Bring life into your project by adding wonderful colors",
@@ -19,4 +19,11 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
+
+# main method inside __main__.py will be called when when we use colorify from console (not from python file)
+    entry_points = {
+        'console_scripts': [
+            'colorify = colorify.__main__:main'
+        ]
+    }
 )

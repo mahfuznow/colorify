@@ -1,3 +1,20 @@
+## Test localy
+
+run the following command in root directory of this library:
+```bash
+pip install .
+```
+Here, `.` represents the corrent directory
+
+to uninstall:
+```bash
+pip uninstall <name>
+```
+
+
+
+## Upload Library
+
 ### Build Distribution
 ```python
 python setup.py sdist bdist_wheel
