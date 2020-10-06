@@ -21,3 +21,6 @@ print(colorify("Alert ", C.black, C.orange))
 
 print(colorify("Info  ", C.blue))
 print(colorify("Info  ", C.white, C.crimson))
+
+#this will print all the color
+printAllColor()

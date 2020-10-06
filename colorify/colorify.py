@@ -2,7 +2,7 @@ import sys
 import os
 import random
 
-
+version_number = "1.1.0"
 class C():
     # BASIC
 
@@ -180,15 +180,20 @@ class CR:
     deep_pink =	(255,20,147)
     chocolate =	(210,105,30)
 
+#initializing colorify. This will clear the terminal screen. otherwise color will not be shown in python script
 def init_colorify():
     if sys.platform.startswith("win32"):
         os.system("cls")
     elif sys.platform.startswith("darwin") or sys.platform.startswith("linux"):
         os.system("clear")
 
+#this will generate random color_name from CL class
 def getRandomColorName():
-    #color_dict = CR.__dict__
-    color_list = [color for color in dir(CR) if not color.startswith('__')]
+    color_list = []
+    for color in dir(CR):
+        #removing __name__ items from dir(CR)
+        if not color.startswith('__'):
+            color_list.append(color)
     return random.choice(color_list)
 
 
@@ -207,3 +212,12 @@ def colorify(text, text_color=None, background_color=None):
             str(background_color[0]), str(background_color[1]), str(
                 background_color[2]), colored_text
         )
+
+#this will print all the colors
+def printAllColor():
+    color_dict = C.__dict__
+    for color_name, color_value in color_dict.items():
+        if not color_name.startswith('__') :
+            print(colorify(color_name,color_value))
+            print(colorify(color_name,C.dark,color_value))
+

@@ -11,7 +11,7 @@
 ```bash
 apt install python3
 ```
-**Install the library :**
+**Install pip :**
 ```bash
 apt install python3-pip
 ```
@@ -25,24 +25,28 @@ pip install colorify
 ### Use in command line
 **library usages:**
 ```bash
+colorify -h
+```
+Or,
+```bash
 colorify --help
 ```
 **Output**
 ![output0](https://raw.githubusercontent.com/mahfuznow/colorify/master/images/output0.JPG) ____________ 
 
 
-**Example code**
+**Example commands**
 ```bash
-colorify Hello world
-colorify Hello world
-colorify Hello world
-colorify Hello world
-colorify Hello world
-colorify Hello world
-colorify Hello world
-colorify Hello world
-colorify Hello world
-colorify Hello world
+colorify "Random Colored text"
+colorify "Random Colored text"
+colorify "Random Colored text"
+colorify "Random Colored text"
+colorify "Random Colored text"
+colorify "Random Colored text"
+colorify "Random Colored text"
+colorify "Random Colored text"
+colorify "Random Colored text"
+colorify "Random Colored text"
 ```
 **Output**
 ![output1](https://raw.githubusercontent.com/mahfuznow/colorify/master/images/output1.JPG) ____________ ![output2](https://raw.githubusercontent.com/mahfuznow/colorify/master/images/output2.JPG)
@@ -52,7 +56,7 @@ colorify Hello world
     2. Sencond output is generated from dark themed terminal 
 
 
-**Example code:**
+**Example commands:**
 ```bash
 # text color = green
 colorify -tc green Success
@@ -67,6 +71,23 @@ colorify -tc black -bc orange Alert
 
 colorify -tc blue Info
 colorify -tc white -bc blue Info
+```
+Or,
+
+```bash
+# text color = green
+colorify --text-color green Success
+# text color = black , background color = green
+colorify --text-color black --background-color green Succes))
+
+colorify --text-color red Error
+colorify --text-color white --background-color red Error
+
+colorify --text-color orange Alert
+colorify --text-color black --background-color orange Alert
+
+colorify --text-color blue Info
+colorify --text-color white --background-color blue Info
 ```
 
 **Output**
@@ -134,14 +155,39 @@ print(colorify("Info  ", C.white, C.blue))
 
 ## Color options
 
-In command line:
+**In command line:**
 ```bash
-colorify [-tc TEXT_COLOR] [-bc BACKGROUND_COLOR] text
+colorify [-h] [-tc TEXT_COLOR] [-bc BACKGROUND_COLOR] [-l] [-v] text
 ```
-In python script:
+List all color:
+```bash
+colorify -l
+```
+Or,
+```bash
+colorify -cl
+```
+Or,
+```bash
+colorify --color-list
+```
+
+**In python script:**
 ```python
 print(colorify("Your text", C.TEXT_COLOR , C.BACKGROUND_COLOR))
 ```
+List all color:
+```python
+
+from colorify import *
+
+# initializing COLORIFY
+init_colorify()
+#this will print the list of all available color
+printAllColor()
+```
+
+
 
 ### Basic colors:
 ![color_palette](https://raw.githubusercontent.com/mahfuznow/colorify/master/images/color-basic.JPG)
